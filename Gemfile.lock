@@ -1,0 +1,21 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    connection_pool (2.2.1)
+    hashids (1.0.3)
+    puma (3.6.2)
+    rack (2.0.1)
+    redis (3.3.3)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  connection_pool
+  hashids
+  puma
+  rack
+  redis
+
+BUNDLED WITH
+   1.13.7
