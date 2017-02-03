@@ -3,9 +3,11 @@ begin
   require 'hashids'
   require 'redis'
 rescue LoadError => e
-  raise RuntimeError.new('Failed to load library. ' \
-    'Maybe you need to add missing dependency to Gemfile. ' \
-    "Error message: #{e.message}")
+  raise LoadError, <<-MSG
+    Failed to load library.
+    Maybe you need to add missing dependency to Gemfile.
+    Error message: #{e.message}
+  MSG
 end
 
 module URLShortener

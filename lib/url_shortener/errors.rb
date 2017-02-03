@@ -18,7 +18,7 @@ module URLShortener
   # Raised when an empty result returned from storage
   class AdapterEmptyResult < URLShortenerError
     def initialize
-      super(nil, 404)
+      super('Not found', 404)
     end
   end
 
