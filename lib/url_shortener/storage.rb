@@ -2,6 +2,8 @@ require 'url_shortener/adapters'
 
 module URLShortener
   class Storage < Application # :nodoc:
+    attr_reader :adapter
+
     def initialize
       @adapter ||=
         case config.storage['adapter']
