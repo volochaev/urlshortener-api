@@ -6,3 +6,11 @@ development:
     namespace: 'urls'
     port: 6379
     salt: '684b56de68bbea295f79b3927ab77a83' # SecureRandom.hex(13)
+test:
+  storage:
+    adapter: :redis
+    db: 0
+    host: '127.0.0.1'
+    namespace: 'urls-test'
+    port: 6379
+    salt: '684b56de68bbea295f79b3927ab77a83'
