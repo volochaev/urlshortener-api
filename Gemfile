@@ -5,9 +5,9 @@ gem 'hashids'
 gem 'puma'
 gem 'rack'
 gem 'redis'
+gem 'coveralls', require: false
 
 group :development, :test do
   gem 'fuubar'
   gem 'rspec'
-  gem 'simplecov'
 end
